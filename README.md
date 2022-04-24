@@ -22,26 +22,29 @@ This folder contains the CSV files of our dataset.
 
 ## Problem Definition
 
-Singaporeans in their 20s are taking on increasing amounts of credit card debt, causing many to be unable to repay credit card debts.
-Therefore, our team intends to identify the factors that lead to credit card approval as a form of risk analytics, as approval would likely mean ability of individuals to pay back their credit card debts.
-Ultimately, we aim to help banks determine if individuals should be granted a credit card based on the factors identified, and avoid loaning to those with poor credit scores. 
+Singaporeans in their 20s are taking on increasing amounts of credit card debt, causing many to be unable to repay credit card debts. Therefore, our team intends to identify the factors that lead to credit card approval as a form of risk analytics, as approval would likely mean ability of individuals to pay back their credit card debts. Ultimately, we aim to help banks determine if individuals should be granted a credit card based on the factors identified, and avoid loaning to those with poor credit scores. 
 
 ## Code
 
 **Data Preparation & Cleaning**
+
 We merged the CSV files together, then dropped irrelevant columns while forming new columns to aid our analysis. We also convererted qualitative descriptions into categorical (0/1) variables. Anomalies were removed using the Isolation Forest algorithm.
 *Target Variable: Days of Loan Overdue*
 
 **Explaratory Data Analysis**
+
 We seperated our numerical variables from our categorical variables. Then, We conducted a uni-variate and bi-variate analysis of each variable. This helped us identify those with strong correlation to days of loan overdue, which we will utilise in our Machine Learning models.
 
 **Linear Regression & Random Forest Regression**
+
 We performed a train-test split and tested the accuracy of each numerical variable using a regression model. By comparing R-Squared value, we identified that income is the best variable to estimate the days of loan overdue. 
 
 **Random Forest Classifier**
+
 We performed a stratified K-Fold Cross Validation process to maintain the same class ratio across our train and test sets as our original dataset. Then, we used income to predict if an applicant will have difficulties paying back his or her loan on time (or even having to default on the loan).
 
 **Artificial Neural Network (TensorFlow & Keras)**
+
 We trained an Artifical Neural Network model with a sequential classifier to determine if individuals should get their credit card approved. By training the model on 4 variables (Income_level, Car_owned, Property_owned, Employed), the model enables us to do forecasting of credit card approval.  
 
 ## Conclusion
