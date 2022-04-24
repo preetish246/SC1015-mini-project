@@ -14,6 +14,7 @@ This is a project for SC1015 (Introduction to Data Science and Artificial Intell
 ## Data Folder
 
 This folder contains the CSV files of our dataset.
+
 **credit_record.csv** - Contains the key personal and financial information about credit card holders. This includes Age, Income, Education Status etcetra. 
 
 **application_record.csv** - Contains the duration taken for credit card holders to pay off their outstanding debts. As credit card holders are able to take on multiple loans at a time, this dataset tracks each transaction.
