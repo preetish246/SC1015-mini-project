@@ -1,5 +1,6 @@
 # SC1015 Project - Credit Card Debt Repayment
 
+
 ## About
 
 This is a project for SC1015 (Introduction to Data Science and Artificial Intelligence) using data from [credit card holders (Kaggle)](https://www.kaggle.com/datasets/rikdifos/credit-card-approval-prediction?select=credit_record.csv). A brief overview of our code is as follows:
@@ -11,6 +12,7 @@ This is a project for SC1015 (Introduction to Data Science and Artificial Intell
 5. Random Forest Classifier
 6. Artificial Neural Network (TensorFlow & Keras)
 
+
 ## Data Folder
 
 This folder contains the CSV files of our dataset.
@@ -20,15 +22,18 @@ This folder contains the CSV files of our dataset.
 **application_record.csv** - Contains the duration taken for credit card holders to pay off their outstanding debts. As credit card holders are able to take on multiple loans at a time, this dataset tracks each transaction.
 
 
+
 ## Problem Definition
 
 Singaporeans in their 20s are taking on increasing amounts of credit card debt, causing many to be unable to repay credit card debts. Therefore, our team intends to identify the factors that lead to credit card approval as a form of risk analytics, as approval would likely mean ability of individuals to pay back their credit card debts. Ultimately, we aim to help banks determine if individuals should be granted a credit card based on the factors identified, and avoid loaning to those with poor credit scores. 
+
 
 ## Code
 
 **Data Preparation & Cleaning**
 
 We merged the CSV files together, then dropped irrelevant columns while forming new columns to aid our analysis. We also convererted qualitative descriptions into categorical (0/1) variables. Anomalies were removed using the Isolation Forest algorithm.
+
 *Target Variable: Days of Loan Overdue*
 
 **Explaratory Data Analysis**
@@ -47,15 +52,18 @@ We performed a stratified K-Fold Cross Validation process to maintain the same c
 
 We trained an Artifical Neural Network model with a sequential classifier to determine if individuals should get their credit card approved. By training the model on 4 variables (Income_level, Car_owned, Property_owned, Employed), the model enables us to do forecasting of credit card approval.  
 
+
 ## Conclusion
 
 We managed to achieve our objectives of identifying key variables that affects the probability of an individual failing to repay credit card debts. We also developed an artificial neural network model to help banks determine if individuals should be granted a credit card. Overall, we reinforced our knowledge on what was taught in this module, and also explored other algorithms and machine learning libraries. 
+
 
 ## Contribution
 
 @preetish246: Exploratory Data Analysis, Linear Regression
 @ngweekiat: Artificial Neural Network (TensorFlow & Keras)
 @xP4NGU1N: Data Preparation & Cleaning, Random Forest
+
 
 ## References
 
