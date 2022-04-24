@@ -61,7 +61,9 @@ We managed to achieve our objectives of identifying key variables that affects t
 ## Contribution
 
 @preetish246: Exploratory Data Analysis, Linear Regression
+
 @ngweekiat: Artificial Neural Network (TensorFlow & Keras)
+
 @xP4NGU1N: Data Preparation & Cleaning, Random Forest
 
 
